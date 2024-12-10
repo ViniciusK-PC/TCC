@@ -1,12 +1,3 @@
-// *********************
-// Role of the component: Rating percent element intended to be on the single product page
-// Name of the component: RatingPercentElement.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <RatingPercentElement />
-// Input parameters: no input parameters
-// Output: rating element that contains rating stats for the given single product
-// *********************
 
 import React from "react";
 import { FaStar } from "react-icons/fa6";
@@ -21,24 +12,24 @@ const RatingPercentElement = () => {
         <FaStar className="text-custom-yellow text-2xl" />
         <FaStar className="text-custom-yellow text-2xl" />
         <p className="ms-1 text-lg font-medium text-black dark:text-gray-400">
-          4.95
+          4,95
         </p>
         <p className="ms-1 text-lg font-medium text-black dark:text-gray-400">
-          out of
+          fora de
         </p>
         <p className="ms-1 text-lg font-medium text-black dark:text-gray-400">
           5
         </p>
       </div>
       <p className="text-lg font-medium text-black dark:text-gray-400 text-center">
-        1,745 global ratings
+        1,745 classificações globais
       </p>
       <div className="flex items-center justify-center mt-4">
         <a
           href="#"
           className="text-base font-medium text-black dark:text-blue-500 hover:underline"
         >
-          5 star
+          5 estrela
         </a>
         <div className="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
           <div className="h-5 bg-custom-yellow rounded" style={{"width": "70%"}}></div>
@@ -52,7 +43,7 @@ const RatingPercentElement = () => {
           href="#"
           className="text-base font-medium text-black dark:text-blue-500 hover:underline"
         >
-          4 star
+          4 estrela
         </a>
         <div className="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
           <div className="h-5 bg-custom-yellow rounded" style={{"width": "17%"}}></div>
@@ -66,7 +57,7 @@ const RatingPercentElement = () => {
           href="#"
           className="text-base font-medium text-black dark:text-blue-500 hover:underline"
         >
-          3 star
+          3 estrela
         </a>
         <div className="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
           <div className="h-5 bg-custom-yellow rounded" style={{"width": "8%"}}></div>
@@ -80,7 +71,7 @@ const RatingPercentElement = () => {
           href="#"
           className="text-base font-medium text-black dark:text-blue-500 hover:underline"
         >
-          2 star
+          2 estrela
         </a>
         <div className="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
           <div className="h-5 bg-custom-yellow rounded" style={{"width": "4%"}}></div>
@@ -94,7 +85,7 @@ const RatingPercentElement = () => {
           href="#"
           className="text-base font-medium text-black dark:text-blue-500 hover:underline"
         >
-          1 star
+          1 estrela
         </a>
         <div className="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
           <div className="h-5 bg-custom-yellow rounded" style={{"width": "1%"}}></div>

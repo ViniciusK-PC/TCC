@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Topbar of the header
-// Name of the component: HeaderTop.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <HeaderTop />
-// Input parameters: no input parameters
-// Output: topbar with phone, email and login and register links
-// *********************
+
 
 "use client";
 import { signOut, useSession } from "next-auth/react";
@@ -31,11 +23,11 @@ const HeaderTop = () => {
         <ul className="flex items-center h-full gap-x-5 max-[370px]:text-sm max-[370px]:gap-x-2">
           <li className="flex items-center gap-x-2 font-semibold">
             <FaHeadphones className="text-white" />
-            <span>+381 61 123 321</span>
+            <span>+55 53 32292643</span>
           </li>
           <li className="flex items-center gap-x-2 font-semibold">
             <FaRegEnvelope className="text-white text-xl" />
-            <span>test@email.com</span>
+            <span>Eletrotecnicamauricio@hotmail.com</span>
           </li>
         </ul>
         <ul className="flex items-center gap-x-5 h-full max-[370px]:text-sm max-[370px]:gap-x-2 font-semibold">
@@ -44,13 +36,13 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <Link href="/login" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Login</span>
+              <span>Conecte-se</span>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="/register" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Register</span>
+              <span>Registrar</span>
             </Link>
           </li>
           </>
@@ -59,7 +51,7 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <button onClick={() => handleLogout()} className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Log out</span>
+              <span>Sair</span>
             </button>
           </li>
           </>)}

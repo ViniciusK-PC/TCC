@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Single product tabs on the single product page containing product description, main product info and reviews
-// Name of the component: ProductTabs.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <ProductTabs product={product} />
-// Input parameters: { product: Product }
-// Output: Single product tabs containing product description, main product info and reviews
-// *********************
+
 
 "use client";
 
@@ -28,7 +20,7 @@ const ProductTabs = ({ product }: { product: Product }) => {
           }`}
           onClick={() => setCurrentProductTab(0)}
         >
-          Description
+          Descrição
         </a>
         <a
           role="tab"
@@ -37,7 +29,7 @@ const ProductTabs = ({ product }: { product: Product }) => {
           }`}
           onClick={() => setCurrentProductTab(1)}
         >
-          Additional info
+            Informações adicionais
         </a>
       </div>
       <div className="pt-5">
@@ -53,12 +45,12 @@ const ProductTabs = ({ product }: { product: Product }) => {
               <tbody>
                 {/* row 1 */}
                 <tr>
-                  <th>Manufacturer:</th>
+                  <th>Fabricante:</th>
                   <td>{product?.manufacturer}</td>
                 </tr>
                 {/* row 2 */}
                 <tr>
-                  <th>Category:</th>
+                  <th>Categoria:</th>
                   <td>
                     {product?.category?.name
                       ? formatCategoryName(product?.category?.name)
@@ -67,8 +59,8 @@ const ProductTabs = ({ product }: { product: Product }) => {
                 </tr>
                 {/* row 3 */}
                 <tr>
-                  <th>Color:</th>
-                  <td>Silver, LightSlateGray, Blue</td>
+                  <th>Cor:</th>
+                  <td>Prata, Cinza-ardósia-claro, Azul</td>
                 </tr>
               </tbody>
             </table>

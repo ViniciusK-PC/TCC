@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Color chooser on single product page component
-// Name of the component: ColorInput.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <ColorInput />
-// Input parameters: no input parameters
-// Output: color chooser
-// *********************
+
 
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
@@ -15,7 +7,7 @@ const ColorInput = () => {
   return (
     <div className="flex flex-col gap-y-2 max-[500px]:items-center">
       <p className="text-xl">
-        Color: <span className="text-lg font-normal">silver</span>
+        Cor: <span className="text-lg font-normal">prata</span>
       </p>
       <div className="flex gap-x-1">
         <div className="bg-gray-400 w-10 h-10 rounded-full cursor-pointer flex justify-center items-center">

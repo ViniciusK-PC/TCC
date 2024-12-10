@@ -24,31 +24,31 @@ const DashboardNewCategoryPage = () => {
           if (response.status === 201) {
             return response.json();
           } else {
-            throw Error("There was an error while creating category");
+            throw Error("Ocorreu um erro ao criar a categoria");
           }
         })
         .then((data) => {
-          toast.success("Category added successfully");
+          toast.success("Categoria adicionada com sucesso");
           setCategoryInput({
             name: "",
           });
         })
         .catch((error) => {
-          toast.error("There was an error while creating category");
+          toast.error("Ocorreu um erro ao criar a categoria");
         });
     } else {
-      toast.error("You need to enter values to add a category");
+      toast.error("Você precisa inserir valores para adicionar uma categoria");
     }
   };
   return (
     <div className="bg-white flex justify-start max-w-screen-2xl mx-auto xl:h-full max-xl:flex-col max-xl:gap-y-5">
       <DashboardSidebar />
       <div className="flex flex-col gap-y-7 xl:pl-5 max-xl:px-5 w-full">
-        <h1 className="text-3xl font-semibold">Add new category</h1>
+        <h1 className="text-3xl font-semibold">Adicionar nova categoria</h1>
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Category name:</span>
+              <span className="label-text">Nome da categoria:</span>
             </div>
             <input
               type="text"
@@ -67,7 +67,7 @@ const DashboardNewCategoryPage = () => {
             className="uppercase bg-blue-500 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2"
             onClick={addNewCategory}
           >
-            Create category
+            Criar categoria
           </button>
         </div>
       </div>

@@ -26,14 +26,14 @@ const DashboardSingleCategory = ({
     fetch(`http://localhost:3001/api/categories/${id}`, requestOptions)
       .then((response) => {
         if (response.status === 204) {
-          toast.success("Category deleted successfully");
+          toast.success("Categoria excluída com sucesso");
           router.push("/admin/categories");
         } else {
-          throw Error("There was an error deleting a category");
+          throw Error("Ocorreu um erro ao excluir uma categoria");
         }
       })
       .catch((error) => {
-        toast.error("There was an error deleting category");
+        toast.error("Ocorreu um erro ao excluir a categoria");
       });
   };
 
@@ -52,15 +52,15 @@ const DashboardSingleCategory = ({
           if (response.status === 200) {
             return response.json();
           } else {
-            throw Error("Error updating a category");
+            throw Error("Erro ao atualizar uma categoria");
           }
         })
-        .then((data) => toast.success("Category successfully updated"))
+        .then((data) => toast.success("Categoria atualizada com sucesso"))
         .catch((error) => {
-          toast.error("There was an error while updating a category");
+          toast.error("Ocorreu um erro ao atualizar uma categoria");
         });
     } else {
-      toast.error("For updating a category you must enter all values");
+      toast.error("Para atualizar uma categoria você deve inserir todos os valores");
       return;
     }
   };
@@ -82,11 +82,11 @@ const DashboardSingleCategory = ({
     <div className="bg-white flex justify-start max-w-screen-2xl mx-auto xl:h-full max-xl:flex-col max-xl:gap-y-5">
       <DashboardSidebar />
       <div className="flex flex-col gap-y-7 xl:pl-5 max-xl:px-5 w-full">
-        <h1 className="text-3xl font-semibold">Category details</h1>
+        <h1 className="text-3xl font-semibold">Detalhes da categoria</h1>
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Category name:</span>
+              <span className="label-text">Nome da categoria:</span>
             </div>
             <input
               type="text"
@@ -105,19 +105,19 @@ const DashboardSingleCategory = ({
             className="uppercase bg-blue-500 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2"
             onClick={updateCategory}
           >
-            Update category
+            Atualizar categoria
           </button>
           <button
             type="button"
             className="uppercase bg-red-600 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-red-700 hover:text-white focus:outline-none focus:ring-2"
             onClick={deleteCategory}
           >
-            Delete category
+            Excluir categoria
           </button>
         </div>
         <p className="text-xl text-error max-sm:text-lg">
-          Note: if you delete this category, you will delete all products
-          associated with the category.
+         Nota: se você excluir esta categoria, você excluirá todos os produtos
+         associados à categoria.
         </p>
       </div>
     </div>

@@ -10,7 +10,7 @@ import {
 } from "@/components";
 import React from "react";
 
-// improve readabillity of category text, for example category text "smart-watches" will be "smart watches"
+// melhora a legibilidade do texto da categoria, por exemplo o texto da categoria "smart-watches" será "smart watches"
 const improveCategoryText = (text: string): string => {
   if (text.indexOf("-") !== -1) {
     let textArray = text.split("-");
@@ -34,7 +34,7 @@ const ShopPage = (slug: any) => {
               <h2 className="text-2xl font-bold max-sm:text-xl max-[400px]:text-lg uppercase">
                 {slug?.params?.slug && slug?.params?.slug[0]?.length > 0
                   ? improveCategoryText(slug?.params?.slug[0])
-                  : "All products"}
+                  : "Todos os Produtos"}
               </h2>
 
               <SortBy />

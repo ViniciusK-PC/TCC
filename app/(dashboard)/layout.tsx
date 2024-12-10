@@ -20,7 +20,9 @@ export default async function Layout({
   
   const res = await fetch(`http://localhost:3001/api/users/email/${email}`);
   const data = await res.json();
-  // redirecting user to the home page if not admin
+  // redirecionando o usuário para a página inicial 
+  //se não for administrador
+  
   if (data.role === "user") {
     redirect("/");
   }

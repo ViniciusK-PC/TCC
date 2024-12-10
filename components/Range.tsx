@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Range input for price intented to be on the shop page
-// Name of the component: Range.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <Range min={min} max={max} priceValue={priceValue} setInputCategory={setInputCategory} />
-// Input parameters: RangeProps interface
-// Output: range input with current range price
-// *********************
+
 
 "use client";
 import React, { useState } from 'react'

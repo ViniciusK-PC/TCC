@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Product table component on admin dashboard page
-// Name of the component: DashboardProductTable.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <DashboardProductTable />
-// Input parameters: no input parameters
-// Output: products table
-// *********************
+
 
 "use client";
 import { nanoid } from "nanoid";
@@ -30,7 +22,7 @@ const DashboardProductTable = () => {
 
   return (
     <div className="w-full">
-      <h1 className="text-3xl font-semibold text-center mb-5">All products</h1>
+      <h1 className="text-3xl font-semibold text-center mb-5">Todos Produtos</h1>
       <div className="flex justify-end mb-5">
         <Link href="/admin/products/new">
           <CustomButton
@@ -39,7 +31,7 @@ const DashboardProductTable = () => {
             paddingX={10}
             paddingY={5}
             textSize="base"
-            text="Add new product"
+            text="Adicionar novo Produto"
           />
         </Link>
       </div>
@@ -54,9 +46,9 @@ const DashboardProductTable = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Product</th>
-              <th>Stock Availability</th>
-              <th>Price</th>
+              <th>Produto</th>
+              <th>Disponibilidade de estoque</th>
+              <th>Preço</th>
               <th></th>
             </tr>
           </thead>
@@ -95,9 +87,9 @@ const DashboardProductTable = () => {
 
                   <td>
                     { product?.inStock ? (<span className="badge badge-success text-white badge-sm">
-                      In stock
+                      Em estoque
                     </span>) : (<span className="badge badge-error text-white badge-sm">
-                      Out of stock
+                      Fora de estoque
                     </span>) }
                     
                   </td>
@@ -107,7 +99,7 @@ const DashboardProductTable = () => {
                       href={`/admin/products/${product.id}`}
                       className="btn btn-ghost btn-xs"
                     >
-                      details
+                      detalhes
                     </Link>
                   </th>
                 </tr>
@@ -117,9 +109,9 @@ const DashboardProductTable = () => {
           <tfoot>
             <tr>
               <th></th>
-              <th>Product</th>
-              <th>Stock Availability</th>
-              <th>Price</th>
+              <th>Produto</th>
+              <th>Disponibilidade de estoque</th>
+              <th>Preço</th>
               <th></th>
             </tr>
           </tfoot>

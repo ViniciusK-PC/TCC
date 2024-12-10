@@ -12,7 +12,7 @@ const RegisterPage = () => {
   const { data: session, status: sessionStatus } = useSession();
 
   useEffect(() => {
-    // chechking if user has already registered redirect to home page
+    // verificando se o usuário já está registrado redirecionar para a página inicial
     if (sessionStatus === "authenticated") {
       router.replace("/");
     }
@@ -29,25 +29,25 @@ const RegisterPage = () => {
     const confirmPassword = e.target[4].value;
 
     if (!isValidEmail(email)) {
-      setError("Email is invalid");
-      toast.error("Email is invalid");
+      setError("O e-mail é inválido");
+      toast.error("O e-mail é inválido");
       return;
     }
 
     if (!password || password.length < 8) {
-      setError("Password is invalid");
-      toast.error("Password is invalid");
+      setError("A senha é inválida");
+      toast.error("A senha é inválida");
       return;
     }
 
     if (confirmPassword !== password) {
-      setError("Passwords are not equal");
-      toast.error("Passwords are not equal");
+      setError("As senhas não são iguais");
+      toast.error("As senhas não são iguais");
       return;
     }
 
     try {
-      // sending API request for registering user
+      // enviando solicitação de API para registro de usuário
       const res = await fetch("/api/register", {
         method: "POST",
         headers: {
@@ -60,23 +60,23 @@ const RegisterPage = () => {
       });
 
       if (res.status === 400) {
-        toast.error("This email is already registered");
-        setError("The email already in use");
+        toast.error("Este e-mail já está registado");
+        setError("O e-mail já está em uso");
       }
       if (res.status === 200) {
         setError("");
-        toast.success("Registration successful");
+        toast.success("Registro realizado com sucesso");
         router.push("/login");
       }
     } catch (error) {
-      toast.error("Error, try again");
-      setError("Error, try again");
+      toast.error("Erro, tente novamente");
+      setError("Erro, tente novamente");
       console.log(error);
     }
   };
 
   if (sessionStatus === "loading") {
-    return <h1>Loading...</h1>;
+    return <h1>Carregando...</h1>;
   }
   return (
     <div className="bg-white">
@@ -84,7 +84,7 @@ const RegisterPage = () => {
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8 bg-white">
         <div className="flex justify-center flex-col items-center">
           <h2 className="mt-6 text-center text-2xl leading-9 tracking-tight text-gray-900">
-            Sign up on our website
+          Cadastre-se em nosso site
           </h2>
         </div>
 
@@ -96,7 +96,7 @@ const RegisterPage = () => {
                   htmlFor="name"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Name
+                  Nome
                 </label>
                 <div className="mt-2">
                   <input
@@ -114,7 +114,7 @@ const RegisterPage = () => {
                   htmlFor="lastname"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Lastname
+                  Sobrenome
                 </label>
                 <div className="mt-2">
                   <input
@@ -132,7 +132,7 @@ const RegisterPage = () => {
                   htmlFor="email"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Email address
+                  Endereço de email
                 </label>
                 <div className="mt-2">
                   <input
@@ -151,7 +151,7 @@ const RegisterPage = () => {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Password
+                  Senha
                 </label>
                 <div className="mt-2">
                   <input
@@ -170,7 +170,7 @@ const RegisterPage = () => {
                   htmlFor="confirmpassword"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Confirm password
+                  Confirme sua senha
                 </label>
                 <div className="mt-2">
                   <input
@@ -196,7 +196,7 @@ const RegisterPage = () => {
                     htmlFor="remember-me"
                     className="ml-3 block text-sm leading-6 text-gray-900"
                   >
-                    Accept our terms and privacy policy
+                    Aceite nossos termos e política de privacidade
                   </label>
                 </div>
               </div>

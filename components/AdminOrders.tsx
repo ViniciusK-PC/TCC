@@ -1,15 +1,4 @@
 "use client";
-
-// *********************
-// Role of the component: Component that displays all orders on admin dashboard page
-// Name of the component: AdminOrders.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <AdminOrders />
-// Input parameters: No input parameters
-// Output: Table with all orders
-// *********************
-
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -27,7 +16,7 @@ const AdminOrders = () => {
 
   return (
     <div className="xl:ml-5 w-full max-xl:mt-5 ">
-      <h1 className="text-3xl font-semibold text-center mb-5">All orders</h1>
+      <h1 className="text-3xl font-semibold text-center mb-5">Todos os pedidos</h1>
       <div className="overflow-x-auto">
         <table className="table table-md table-pin-cols">
           {/* head */}
@@ -38,11 +27,11 @@ const AdminOrders = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Order ID</th>
-              <th>Name and country</th>
+              <th>ID do pedido</th>
+              <th>Nome e país</th>
               <th>Status</th>
               <th>Subtotal</th>
-              <th>Date</th>
+              <th>Data</th>
               <th></th>
             </tr>
           </thead>
@@ -88,7 +77,7 @@ const AdminOrders = () => {
                       href={`/admin/orders/${order?.id}`}
                       className="btn btn-ghost btn-xs"
                     >
-                      details
+                      Detalhes
                     </Link>
                   </th>
                 </tr>
@@ -97,12 +86,12 @@ const AdminOrders = () => {
           {/* foot */}
           <tfoot>
             <tr>
-              <th></th>
-              <th>Order ID</th>
-              <th>Name and country</th>
+            <th>ID do pedido</th>
+              <th>Nome e país</th>
               <th>Status</th>
               <th>Subtotal</th>
-              <th>Date</th>
+              <th>Data</th>
+              <th></th>
               <th></th>
             </tr>
           </tfoot>

@@ -48,10 +48,10 @@ const WishlistPage = () => {
   }, [session?.user?.email, wishlist.length]);
   return (
     <div className="bg-white">
-      <SectionTitle title="Wishlist" path="Home | Wishlist" />
+      <SectionTitle title="lista de Desejos" path="Home | lista de Desejos" />
       {wishlist && wishlist.length === 0 ? (
         <h3 className="text-center text-4xl py-10 text-black max-lg:text-3xl max-sm:text-2xl max-sm:pt-5 max-[400px]:text-xl">
-          No items found in the wishlist
+          Nenhum item encontrado na lista de desejos
         </h3>
       ) : (
         <div className="max-w-screen-2xl mx-auto">
@@ -60,10 +60,10 @@ const WishlistPage = () => {
               <thead>
                 <tr>
                   <th></th>
-                  <th className="text-accent-content">Image</th>
-                  <th className="text-accent-content">Name</th>
-                  <th className="text-accent-content">Stock Status</th>
-                  <th className="text-accent-content">Action</th>
+                  <th className="text-accent-content">Imagem</th>
+                  <th className="text-accent-content">Nome</th>
+                  <th className="text-accent-content">Status do estoque</th>
+                  <th className="text-accent-content">Ação</th>
                 </tr>
               </thead>
               <tbody>

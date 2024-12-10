@@ -265,7 +265,7 @@ const DashboardProductDetails = ({
             type="file"
             className="file-input file-input-bordered file-input-lg w-full max-w-sm"
             onChange={(e) => {
-              const selectedFile = e.target.files[0];
+              const selectedFile = e.target.files[0];      ////Problema aqui
 
               if (selectedFile) {
                 uploadFile(selectedFile);
@@ -303,7 +303,7 @@ const DashboardProductDetails = ({
         <div>
           <label className="form-control">
             <div className="label">
-              <span className="label-text">Product description:</span>
+              <span className="label-text">Descrição do Produto:</span>
             </div>
             <textarea
               className="textarea textarea-bordered h-24"
@@ -322,20 +322,20 @@ const DashboardProductDetails = ({
             onClick={updateProduct}
             className="uppercase bg-blue-500 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2"
           >
-            Update product
+            Atualizar Produto
           </button>
           <button
             type="button"
             className="uppercase bg-red-600 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-red-700 hover:text-white focus:outline-none focus:ring-2"
             onClick={deleteProduct}
           >
-            Delete product
+            Deletar Produto
           </button>
         </div>
         {/* Action buttons div - end */}
         <p className="text-xl max-sm:text-lg text-error">
-          To delete the product you first need to delete all its records in
-          orders (customer_order_product table).
+        Para excluir o produto, primeiro você precisa excluir todos os seus registros em
+        pedidos (tabela customer_order_product).
         </p>
       </div>
     </div>

@@ -117,11 +117,11 @@ const AddNewProduct = () => {
     <div className="bg-white flex justify-start max-w-screen-2xl mx-auto xl:h-full max-xl:flex-col max-xl:gap-y-5">
       <DashboardSidebar />
       <div className="flex flex-col gap-y-7 xl:ml-5 max-xl:px-5 w-full">
-        <h1 className="text-3xl font-semibold">Add new product</h1>
+        <h1 className="text-3xl font-semibold">Adicionar novo Produto</h1>
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Product name:</span>
+              <span className="label-text">Nome do Produto: </span>
             </div>
             <input
               type="text"
@@ -137,7 +137,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Product slug:</span>
+              <span className="label-text">Modelo Do Produto:</span>
             </div>
             <input
               type="text"
@@ -156,7 +156,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Category:</span>
+              <span className="label-text">Categoria:</span>
             </div>
             <select
               className="select select-bordered"
@@ -178,7 +178,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Product price:</span>
+              <span className="label-text">Preço do Produto:</span>
             </div>
             <input
               type="text"
@@ -193,7 +193,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Manufacturer:</span>
+              <span className="label-text">Fabricante:</span>
             </div>
             <input
               type="text"
@@ -208,7 +208,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
-              <span className="label-text">Is product in stock?</span>
+              <span className="label-text">O produto está em estoque?</span>
             </div>
             <select
               className="select select-bordered"
@@ -244,7 +244,7 @@ const AddNewProduct = () => {
         <div>
           <label className="form-control">
             <div className="label">
-              <span className="label-text">Product description:</span>
+              <span className="label-text">Descrição do Produto:</span>
             </div>
             <textarea
               className="textarea textarea-bordered h-24"
@@ -261,7 +261,7 @@ const AddNewProduct = () => {
             type="button"
             className="uppercase bg-blue-500 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2"
           >
-            Add product
+            Adicionar produto
           </button>
         </div>
       </div>

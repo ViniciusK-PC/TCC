@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Product item component 
-// Name of the component: ProductItem.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <ProductItem product={product} color={color} />
-// Input parameters: { product: Product; color: string; }
-// Output: Product item component that contains product image, title, link to the single product page, price, button...
-// *********************
+
 
 import Image from "next/image";
 import React from "react";
@@ -53,7 +45,7 @@ const ProductItem = ({
             : "text-lg text-white font-semibold"
         }
       >
-        ${product.price}
+        R${product.price}
       </p>
 
       <ProductItemRating productRating={product?.rating} />
@@ -61,7 +53,7 @@ const ProductItem = ({
         href={`/product/${product?.slug}`}
         className="block flex justify-center items-center w-full uppercase bg-white px-0 py-2 text-base border border-black border-gray-300 font-bold text-blue-600 shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
       >
-        <p>View product</p>
+        <p>Ver produto</p>
       </Link>
     </div>
   );

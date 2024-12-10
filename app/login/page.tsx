@@ -26,14 +26,14 @@ const LoginPage = () => {
     const password = e.target[1].value;
 
     if (!isValidEmailAddressFormat(email)) {
-      setError("Email is invalid");
-      toast.error("Email is invalid");
+      setError("O e-mail é inválido");
+      toast.error("O e-mail é inválido");
       return;
     }
 
     if (!password || password.length < 8) {
-      setError("Password is invalid");
-      toast.error("Password is invalid");
+      setError("A senha é inválida");
+      toast.error("A senha é inválida");
       return;
     }
 
@@ -44,17 +44,17 @@ const LoginPage = () => {
     });
 
     if (res?.error) {
-      setError("Invalid email or password");
-      toast.error("Invalid email or password");
+      setError("E-mail ou senha inválidos");
+      toast.error("E-mail ou senha inválidos");
       if (res?.url) router.replace("/");
     } else {
       setError("");
-      toast.success("Successful login");
+      toast.success("Login bem-sucedido");
     }
   };
 
   if (sessionStatus === "loading") {
-    return <h1>Loading...</h1>;
+    return <h1>Carregando...</h1>;
   }
   return (
     <div className="bg-white">
@@ -62,7 +62,7 @@ const LoginPage = () => {
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8 bg-white">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-2xl font-normal leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+            Entre na sua conta
           </h2>
         </div>
 
@@ -74,7 +74,7 @@ const LoginPage = () => {
                   htmlFor="email"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Email address
+                  Endereço de email
                 </label>
                 <div className="mt-2">
                   <input
@@ -93,7 +93,7 @@ const LoginPage = () => {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Password
+                  Senha
                 </label>
                 <div className="mt-2">
                   <input
@@ -119,7 +119,7 @@ const LoginPage = () => {
                     htmlFor="remember-me"
                     className="ml-3 block text-sm leading-6 text-gray-900"
                   >
-                    Remember me
+                   Lembre de mim
                   </label>
                 </div>
 
@@ -128,7 +128,7 @@ const LoginPage = () => {
                     href="#"
                     className="font-semibold text-black hover:text-black"
                   >
-                    Forgot password?
+                    Esqueceu sua senha?
                   </a>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const LoginPage = () => {
                 </div>
                 <div className="relative flex justify-center text-sm font-medium leading-6">
                   <span className="bg-white px-6 text-gray-900">
-                    Or continue with
+                  Ou continue com
                   </span>
                 </div>
               </div>

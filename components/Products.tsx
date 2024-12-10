@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Showing products on the shop page with applied filter and sort
-// Name of the component: Products.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <Products slug={slug} />
-// Input parameters: { slug }: any
-// Output: products grid
-// *********************
+
 
 import React from "react";
 import ProductItem from "./ProductItem";
@@ -38,6 +30,7 @@ const Products = async ({ slug }: any) => {
   }
 
   // sending API request with filtering, sorting and pagination for getting all products
+  console.log("slug")
   const data = await fetch(
     `http://localhost:3001/api/products?filters[price][$lte]=${
       slug?.searchParams?.price || 3000
@@ -70,7 +63,7 @@ const Products = async ({ slug }: any) => {
         ))
       ) : (
         <h3 className="text-3xl mt-5 text-center w-full col-span-full max-[1000px]:text-2xl max-[500px]:text-lg">
-          No products found for specified query
+         Nenhum produto encontrado para a consulta especificada
         </h3>
       )}
     </div>

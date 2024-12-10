@@ -1,12 +1,4 @@
-// *********************
-// Role of the component: Range with labels for price intented to be on the shop page
-// Name of the component: RangeWithLabels.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <RangeWithLabels />
-// Input parameters: no input parameters
-// Output: range input with the labels
-// *********************
+
 
 "use client";
 
@@ -34,11 +26,11 @@ const RangeWithLabels = () => {
         step="200"
       />
       <div className="w-full flex justify-between text-xs px-2">
-        <span>$0</span>
-        <span>$200</span>
-        <span>$400</span>
-        <span>$600</span>
-        <span>$4000</span>
+        <span>R$0</span>
+        <span>R$200</span>
+        <span>R$400</span>
+        <span>R$600</span>
+        <span>R$4000</span>
       </div>
     </div>
   );

@@ -1,15 +1,4 @@
 "use client";
-
-// *********************
-// Role of the component: Button for adding and removing product to the wishlist on the single product page
-// Name of the component: AddToWishlistBtn.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <AddToWishlistBtn product={product} slug={slug}  />
-// Input parameters: AddToWishlistBtnProps interface
-// Output: Two buttons with adding and removing from the wishlist functionality
-// *********************
-
 import { useWishlistStore } from "@/app/_zustand/wishlistStore";
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
@@ -28,9 +17,9 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
   const [isProductInWishlist, setIsProductInWishlist] = useState<boolean>();
 
   const addToWishlistFun = async () => {
-    // getting user by email so I can get his user id
+      // obtendo o usuário por e-mail para que eu possa obter seu ID de usuário
     if (session?.user?.email) {
-      // sending fetch request to get user id because we will need it for saving wish item
+     // enviando solicitação de busca para obter o ID do usuário porque precisaremos dele para salvar o item desejado
       fetch(`http://localhost:3001/api/users/email/${session?.user?.email}`, {
         cache: "no-store",
       })
@@ -54,11 +43,11 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
                 slug: product?.slug,
                 stockAvailabillity: product?.inStock,
               });
-              toast.success("Product added to the wishlist");
+              toast.success("Produto adicionado à lista de desejos");
             })
         );
     } else {
-      toast.error("You need to be logged in to add a product to the wishlist");
+      toast.error("Você precisa estar logado para adicionar um produto à lista de desejos");
     }
   };
 
@@ -79,7 +68,7 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
         })
         .then((response) => {
           removeFromWishlist(product?.id);
-          toast.success("Product removed from the wishlist");
+          toast.success("Produto removido da lista de desejos");
         });
     }
   };
@@ -120,7 +109,7 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
           onClick={removeFromWishlistFun}
         >
           <FaHeartCrack className="text-xl text-custom-black" />
-          <span className="text-lg">REMOVE FROM WISHLIST</span>
+          <span className="text-lg">REMOVER DA LISTA DE DESEJOS</span>
         </p>
       ) : (
         <p
@@ -128,7 +117,7 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
           onClick={addToWishlistFun}
         >
           <FaHeart className="text-xl text-custom-black" />
-          <span className="text-lg">ADD TO WISHLIST</span>
+          <span className="text-lg">ADICIONE À LISTA DE DESEJOS</span>
         </p>
       )}
     </>

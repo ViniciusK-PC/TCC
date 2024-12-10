@@ -8,7 +8,7 @@ import { formatCategoryName } from "../../../../utils/categoryFormating";
 const DashboardCategory = () => {
   const [categories, setCategories] = useState<Category[]>([]);
 
-  // getting all categories to be displayed on the all categories page
+  // fazendo com que todas as categorias sejam exibidas na página de todas as categorias
   useEffect(() => {
     fetch("http://localhost:3001/api/categories")
       .then((res) => {
@@ -24,7 +24,7 @@ const DashboardCategory = () => {
       <DashboardSidebar />
       <div className="w-full">
         <h1 className="text-3xl font-semibold text-center mb-5">
-          All Categories
+         Todas as categorias
         </h1>
         <div className="flex justify-end mb-5">
           <Link href="/admin/categories/new">
@@ -34,7 +34,7 @@ const DashboardCategory = () => {
               paddingX={10}
               paddingY={5}
               textSize="base"
-              text="Add new category"
+              text="Adicionar nova categoria"
             />
           </Link>
         </div>
@@ -48,7 +48,7 @@ const DashboardCategory = () => {
                     <input type="checkbox" className="checkbox" />
                   </label>
                 </th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th></th>
               </tr>
             </thead>
@@ -73,7 +73,7 @@ const DashboardCategory = () => {
                         href={`/admin/categories/${category?.id}`}
                         className="btn btn-ghost btn-xs"
                       >
-                        details
+                        Detalhes
                       </Link>
                     </th>
                   </tr>
@@ -83,7 +83,7 @@ const DashboardCategory = () => {
             <tfoot>
               <tr>
                 <th></th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th></th>
               </tr>
             </tfoot>

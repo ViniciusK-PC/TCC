@@ -1,12 +1,3 @@
-// *********************
-// Role of the component: Wishlist item component for wishlist page
-// Name of the component: WishItem.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <WishItem id={id} title={title} price={price} image={image} slug={slug} stockAvailabillity={stockAvailabillity} />
-// Input parameters: ProductInWishlist interface
-// Output: single wishlist item on the wishlist page
-// *********************
 
 "use client";
 import { useWishlistStore } from "@/app/_zustand/wishlistStore";
@@ -102,9 +93,9 @@ const WishItem = ({
         onClick={() => openProduct(slug)}
       >
         {stockAvailabillity ? (
-          <span className="text-success">In stock</span>
+          <span className="text-success">Em estoque</span>
         ) : (
-          <span className="text-error">Out of stock</span>
+          <span className="text-error">Fora de estoque</span>
         )}
       </td>
       <td>
@@ -114,7 +105,7 @@ const WishItem = ({
             className="max-sm:hidden"
             onClick={() => deleteItemFromWishlist(id)}
           >
-            remove from the wishlist
+            remover da lista de desejos
           </span>
         </button>
       </td>

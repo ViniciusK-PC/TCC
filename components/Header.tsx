@@ -1,12 +1,3 @@
-// *********************
-// Role of the component: Header component
-// Name of the component: Header.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <Header />
-// Input parameters: no input parameters
-// Output: Header component
-// *********************
 
 "use client";
 import { usePathname } from "next/navigation";
@@ -114,13 +105,13 @@ const Header = () => {
                 className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link href="/admin">Dashboard</Link>
+                  <Link href="/admin">Painel</Link>
                 </li>
                 <li>
-                  <a>Profile</a>
+                  <a>Perfil</a>
                 </li>
                 <li onClick={handleLogout}>
-                  <a href="#">Logout</a>
+                  <a href="#">Sair</a>
                 </li>
               </ul>
             </div>
