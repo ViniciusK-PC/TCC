@@ -103,6 +103,14 @@
   <li><p>You need to put the following code in the .env file and instead of username and password put your MySQL username and password:</p></li>
 </ol>
 
+
+<h2>Instruções</h2> 
+<ol> 
+<li><p>Para rodar o aplicativo, primeiro você precisa baixar e instalar o Node.js e o npm no seu computador. Aqui está um link para o tutorial que explica como instalá-los: <a href="https://www.youtube.com/watch?v=4FAtFwKVhn0" target="_blank">https://www.youtube.com/watch?v=4FAtFwKVhn0</a>. E aqui está o link onde você pode baixá-los: <a href="https://nodejs.org/en" target="_blank">https://nodejs.org/en</a></p></li> 
+<li><p>Depois de instalar o Node.js e o npm no seu computador, você precisa baixar e instalar o MySQL. Aqui está outro tutorial que explica como fazer o download e instalar o MySQL: <a target="_blank" href="https://www.youtube.com/watch?v=BxdSUGBs0gM&t=212s">https://www.youtube.com/watch?v=BxdSUGBs0gM&t=212s</a>. Aqui está o link para baixar o MySQL: <a href="https://dev.mysql.com/downloads/installer/" target="_blank">https://dev.mysql.com/downloads/installer/</a></p></li> 
+<li><p>Este passo é opcional, mas altamente recomendado se você não tem um aplicativo de gerenciamento de banco de dados. O **HeidiSQL** é fácil de usar e indicado para iniciantes. Aqui está o link para o tutorial que explica como baixar e instalar o HeidiSQL: <a href="https://www.youtube.com/watch?v=oJ24MyLeiPs" target="_blank">https://www.youtube.com/watch?v=oJ24MyLeiPs</a> e aqui está o link para baixar: <a href="https://www.heidisql.com" target="_blank">https://www.heidisql.com</a></p></li>
+ <li><p>Quando você tiver instalado todos os programas necessários no seu computador, precisa baixar o projeto. Após o download, extraia o projeto.</p></li> <li><p>Depois de extrair o projeto, abra a pasta do projeto no seu editor de código e, na raiz da pasta, crie um arquivo com o nome **.env**.</p></li> <li><p>Você precisa colocar o seguinte código no arquivo **.env**, substituindo **username** e **password** pelos dados do seu MySQL:</p></li> </ol>
+
 ```
 DATABASE_URL="mysql://username:password@localhost:3306/singitronic_nextjs"
 NEXTAUTH_SECRET=12D16C923BA17672F89B18C1DB22A
