@@ -26,13 +26,13 @@
 
 ![products component comments](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/86c22295-64c6-4328-a17a-8f4f0820b8f1)
 
-<h2>6. Testing</h2>
-<p>Testing is a formal process that is performed by the testing team with the aim of determining the logical correctness and purposefulness of the tested program. The importance of testing is great because it significantly reduces the losses that software companies have due to errors and failure of software incurred after its delivery to the customer. <b>We have done the entire testing process manually and documented everything in detail.</b></p>
+
+<h2>6. Testes</h2> 
+<p>Os testes são um processo formal realizado pela equipe de teste com o objetivo de verificar a correção lógica e a funcionalidade do programa testado. A importância dos testes é enorme, pois eles reduzem significativamente os prejuízos que empresas de software podem ter devido a erros ou falhas após a entrega do software ao cliente. <b>Realizamos todo o processo de testes manualmente e documentamos tudo em detalhes.</b></p>
 
 ![testing script](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/abb8b25e-89e3-4c1e-a195-fff350d7405f)
 
-<p>The test scripts represent the instructions from which it is clearly seen as a step by step how the testing was performed. They provide full control over testing, so, if some errors or cancellation occurs, testing conditions can be repeated and the system again lead to that error or cancellation. This is necessary to establish the cause of the problem.
-As the above image shows, we documented each our test example in terms of test ID, input data, instruction, expected result, actual result, additional comment, component, method and testing technique. Currently, our test script has over 350 manually tested examples.</p>
+<p>Os roteiros de teste são instruções que descrevem, passo a passo, como os testes foram realizados. Eles permitem total controle sobre o processo, de forma que, caso algum erro ou falha ocorra, as condições do teste possam ser repetidas para identificar e corrigir a causa do problema. Como mostrado na imagem acima, documentamos cada exemplo de teste em termos de ID do teste, dados de entrada, instruções, resultado esperado, resultado obtido, comentários adicionais, componente, método e técnica de teste. Atualmente, nosso roteiro possui mais de 350 exemplos testados manualmente.</p>
 
 ![errors in testing script](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/507fa099-2039-47ce-a38b-209166a8d5c4)
 
