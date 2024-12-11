@@ -6,6 +6,7 @@
 <h3>2.1. Definição de marcos</h3> <p>Os marcos representam eventos-chave no projeto que indicam até que data algo deve ser concluído. Nesta etapa, definimos os marcos para cada fase do nosso processo de engenharia de software.</p> 
 <h3>2.2. Kanban - Aplicativo de gerenciamento de projetos</h3> 
 <p>Utilizamos o aplicativo Kanban para o gerenciamento e acompanhamento do projeto. Trata-se de uma ferramenta gratuita que facilita a colaboração entre os membros da equipe e permite a exportação fácil de relatórios do projeto com apenas um clique.</p>
+
 ![plaky image](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/f670fe69-1037-4b8c-a522-047534398e0a)
 
 <h2>3. Análise de Requisitos</h2> 
@@ -22,8 +23,8 @@
 
 <h2>5. Implementação do Software</h2>
  <p>A implementação de software é o processo de transformar um design de software em um sistema funcional. É nesta etapa que toda a programação deve começar. Durante a fase de implementação, é essencial cuidar da documentação interna. Essa documentação inclui cabeçalhos e comentários que fornecem informações básicas sobre os componentes e explicações de partes específicas do código. Esses elementos facilitam o gerenciamento do código e ajudam a compreender melhor o que foi feito, contribuindo para um trabalho mais eficiente e para a manutenção de projetos de software.</p>
- 
-![products component comments](https://github.com/ViniciusK-PC/code.png)
+
+![products component comments](https://discord.com/channels/937256275471892480/1157455505090949140/1316476759406809148)
 
 <h2>6. Testing</h2>
 <p>Testing is a formal process that is performed by the testing team with the aim of determining the logical correctness and purposefulness of the tested program. The importance of testing is great because it significantly reduces the losses that software companies have due to errors and failure of software incurred after its delivery to the customer. <b>We have done the entire testing process manually and documented everything in detail.</b></p>
