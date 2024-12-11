@@ -171,7 +171,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Checkout" path="Home | Cart | Checkout" />
+      <SectionTitle title="Checkout" path="Home | Carrinho | Finalizar compra" />
       {/* Background color split screen for large screens */}
       <div
         className="hidden h-full w-1/2 bg-white lg:block"
@@ -183,7 +183,7 @@ const CheckoutPage = () => {
       />
 
       <main className="relative mx-auto grid max-w-screen-2xl grid-cols-1 gap-x-16 lg:grid-cols-2 lg:px-8 xl:gap-x-48">
-        <h1 className="sr-only">Order information</h1>
+        <h1 className="sr-only">Informações do pedido</h1>
 
         <section
           aria-labelledby="summary-heading"
@@ -194,7 +194,7 @@ const CheckoutPage = () => {
               id="summary-heading"
               className="text-lg font-medium text-gray-900"
             >
-              Order summary
+              Resumo do pedido
             </h2>
 
             <ul
@@ -232,12 +232,12 @@ const CheckoutPage = () => {
               </div>
 
               <div className="flex items-center justify-between">
-                <dt className="text-gray-600">Shipping</dt>
+                <dt className="text-gray-600">Envio</dt>
                 <dd>$5</dd>
               </div>
 
               <div className="flex items-center justify-between">
-                <dt className="text-gray-600">Taxes</dt>
+                <dt className="text-gray-600">Taxas</dt>
                 <dd>${total / 5}</dd>
               </div>
 
@@ -258,7 +258,7 @@ const CheckoutPage = () => {
                 id="contact-info-heading"
                 className="text-lg font-medium text-gray-900"
               >
-                Contact information
+                Informações de contato
               </h2>
 
               <div className="mt-6">
@@ -266,7 +266,7 @@ const CheckoutPage = () => {
                   htmlFor="name-input"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Name
+                  Nome
                 </label>
                 <div className="mt-1">
                   <input
@@ -291,7 +291,7 @@ const CheckoutPage = () => {
                   htmlFor="lastname-input"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Lastname
+                  Sobrenome
                 </label>
                 <div className="mt-1">
                   <input
@@ -316,7 +316,7 @@ const CheckoutPage = () => {
                   htmlFor="phone-input"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Phone number
+                 Número de telefone
                 </label>
                 <div className="mt-1">
                   <input
@@ -341,7 +341,7 @@ const CheckoutPage = () => {
                   htmlFor="email-address"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email address
+                  Endereço de email
                 </label>
                 <div className="mt-1">
                   <input
@@ -367,7 +367,7 @@ const CheckoutPage = () => {
                 id="payment-heading"
                 className="text-lg font-medium text-gray-900"
               >
-                Payment details
+                Detalhes do pagamento
               </h2>
 
               <div className="mt-6 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4">
@@ -376,7 +376,7 @@ const CheckoutPage = () => {
                     htmlFor="name-on-card"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Name on card
+                    Nome no cartão
                   </label>
                   <div className="mt-1">
                     <input
@@ -401,7 +401,7 @@ const CheckoutPage = () => {
                     htmlFor="card-number"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Card number
+                    Número do cartão
                   </label>
                   <div className="mt-1">
                     <input
@@ -426,7 +426,7 @@ const CheckoutPage = () => {
                     htmlFor="expiration-date"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Expiration date (MM/YY)
+                    Data de validade (MM/YY)
                   </label>
                   <div className="mt-1">
                     <input
@@ -478,7 +478,7 @@ const CheckoutPage = () => {
                 id="shipping-heading"
                 className="text-lg font-medium text-gray-900"
               >
-                Shipping address
+                Endereço para envio
               </h2>
 
               <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-3">
@@ -487,7 +487,7 @@ const CheckoutPage = () => {
                     htmlFor="company"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Company
+                   Empresa
                   </label>
                   <div className="mt-1">
                     <input
@@ -511,7 +511,7 @@ const CheckoutPage = () => {
                     htmlFor="address"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Address
+                    Endereço
                   </label>
                   <div className="mt-1">
                     <input
@@ -560,7 +560,7 @@ const CheckoutPage = () => {
                     htmlFor="city"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    City
+                    Cidade
                   </label>
                   <div className="mt-1">
                     <input
@@ -585,7 +585,7 @@ const CheckoutPage = () => {
                     htmlFor="region"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Country
+                    País
                   </label>
                   <div className="mt-1">
                     <input
@@ -610,7 +610,7 @@ const CheckoutPage = () => {
                     htmlFor="postal-code"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Postal code
+                    CEP
                   </label>
                   <div className="mt-1">
                     <input
@@ -635,7 +635,7 @@ const CheckoutPage = () => {
                     htmlFor="order-notice"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Order notice
+                    Aviso de pedido
                   </label>
                   <div className="mt-1">
                     <textarea
@@ -662,7 +662,7 @@ const CheckoutPage = () => {
                 onClick={makePurchase}
                 className="w-full rounded-md border border-transparent bg-blue-500 px-20 py-2 text-lg font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-50 sm:order-last"
               >
-                Pay Now
+                Pague agora
               </button>
             </div>
           </div>

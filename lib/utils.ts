@@ -84,25 +84,25 @@ export const incentives = [
 
 export const navigation = {
   sale: [
-    { name: "Discounts", href: "#" },
-    { name: "News", href: "#" },
-    { name: "Register Discounts", href: "#" },
+    { name: "Descontos", href: "#" },
+    { name: "Noticias", href: "#" },
+    { name: "Registre descontos", href: "#" },
   ],
   about: [
-    { name: "About Singitronic", href: "#" },
-    { name: "Work With Us", href: "#" },
-    { name: "Company Profile", href: "#" },
+    { name: "Sobre Eletrotécnica Mauricio", href: "#" },
+    { name: "Trabalhe Conosco", href: "#" },
+    { name: "Perfil de Companhia", href: "#" },
   ],
   buy: [
-    { name: "Singitronic Loyalty Card", href: "#" },
-    { name: "Terms Of Use", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Complaints", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Cartao Fidelidade Eletrotécnica Mauricio", href: "#" },
+    { name: "Termo de Uso", href: "#" },
+    { name: "Politica de Privacidade", href: "#" },
+    { name: "Reclamações", href: "#" },
+    { name: "Parcerias", href: "#" },
   ],
   help: [
-    { name: "Contact", href: "#" },
-    { name: "How to Buy at Singitronic", href: "#" },
+    { name: "Contato", href: "#" },
+    { name: "Como comprar na Eletrotécnica Mauricio", href: "#" },
     { name: "FAQ", href: "#" },
   ],
 };
