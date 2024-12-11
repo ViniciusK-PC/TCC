@@ -20,11 +20,10 @@
 <h2>4. Design do Sistema</h2> 
 <p>O design do sistema é a etapa da engenharia de software que transforma conceitos e requisitos em estruturas concretas de software. É um processo estratégico que define a arquitetura, os componentes e as interações de um sistema de software para atender a requisitos funcionais e não funcionais específicos. Nesta etapa, descrevemos o tipo de arquitetura do sistema. Definimos o front-end e o back-end, detalhando suas estruturas dentro da nossa aplicação. Também especificamos as estruturas de dados, a estrutura do banco de dados e os tipos mais importantes utilizados na aplicação.</p>
 
-<h2>5. Software implementation</h2>
-<p>Software implementation is the process of converting a software design into a functional software system. This is where all programming should begin.
-When you are in the software implementation stage, it is important to take care of the internal documentation. This documentation includes headers and comments that provide basic information about the component and explanations of specific parts of code. Thanks to these elements, we are easier to manage in code and we better understand what we have done, which contributes to more efficient work and maintaining software projects.</p>
-
-![products component comments](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/86c22295-64c6-4328-a17a-8f4f0820b8f1)
+<h2>5. Implementação do Software</h2>
+ <p>A implementação de software é o processo de transformar um design de software em um sistema funcional. É nesta etapa que toda a programação deve começar. Durante a fase de implementação, é essencial cuidar da documentação interna. Essa documentação inclui cabeçalhos e comentários que fornecem informações básicas sobre os componentes e explicações de partes específicas do código. Esses elementos facilitam o gerenciamento do código e ajudam a compreender melhor o que foi feito, contribuindo para um trabalho mais eficiente e para a manutenção de projetos de software.</p>
+ 
+![products component comments](https://github.com/ViniciusK-PC/code.png)
 
 <h2>6. Testing</h2>
 <p>Testing is a formal process that is performed by the testing team with the aim of determining the logical correctness and purposefulness of the tested program. The importance of testing is great because it significantly reduces the losses that software companies have due to errors and failure of software incurred after its delivery to the customer. <b>We have done the entire testing process manually and documented everything in detail.</b></p>
