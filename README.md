@@ -83,7 +83,7 @@
 ![error frequency](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/d90292b7-579d-4267-a88d-485ee70dc275)
 
 
-<h2>Eletrotécnica MAuricio   – Principais características</h2>
+<h2>Eletrotécnica Mauricio   – Principais características</h2>
  <p>O Eletrotecncica Mauricio é um site de e-commerce desenvolvido em Next.js e Node.js. Nossa aplicação inclui um painel administrativo totalmente funcional e é completamente open-source. O site da loja virtual é totalmente responsivo e foi testado manualmente. Nosso modelo de loja e o tema de e-commerce em Next.js .</p> 
  <h3>O Next.js é bom para e-commerce?</h3>
   <p>O Next.js é, atualmente, uma das melhores ferramentas para desenvolver soluções personalizadas de e-commerce. Seus benefícios incluem desempenho superior, SEO otimizado, facilidade de desenvolvimento e implantação, excelente experiência para desenvolvedores e capacidade de lidar com projetos versáteis e escaláveis. Ao utilizar o Next.js, os desenvolvedores podem criar aplicações web atrativas que oferecem uma experiência excepcional aos usuários, enquanto mantêm o desempenho ideal.</p>
