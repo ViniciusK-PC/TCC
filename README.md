@@ -36,20 +36,17 @@
 
 ![errors in testing script](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/507fa099-2039-47ce-a38b-209166a8d5c4)
 
+<p>Durante o processo de teste, registramos cada erro encontrado em um formulário de relatório de erros. Como mostrado na imagem acima, cada erro possui um ID único e uma descrição detalhada que inclui: data de identificação do erro, data de correção, prioridade do erro, tipo de erro, nome do arquivo e fase do teste.</p> 
+<h3>6.1. Testes ad hoc</h3> 
+<p>A primeira etapa de testes após cada nova funcionalidade adicionada foi a realização de testes ad hoc. Esses testes ocorrem em um ambiente informal, onde o desenvolvedor apresenta o código ao restante do grupo e ocorre uma discussão. Os membros fazem perguntas, o desenvolvedor responde e juntos analisam aspectos específicos da implementação, buscando identificar possíveis erros. Adotamos essa abordagem examinando o código após cada funcionalidade nova e discutindo profundamente os problemas potenciais.</p> 
 
-<p>During the software testing process, we documented each error found in the error report form. As shown in the image above, each error has its own unique error ID and a detailed description of the error containing: date of identifying an error, date of troubleshooting an error, error priority, type of error, file name, testing phase.</p>
-
-<h3>6.1. Ad hoc testing</h3>
-<p>The first step in software testing after each new added functionality in our application was ad hoc testing. The ad hoc testing takes place in an unofficial atmosphere. The developer presents the code to the rest of the group and then the discussion occurs. The members of the group ask questions, the developer corresponds to them, together analyze individual implementation aspects that they consider significant and try to find mistakes.
-We have applied this method by examining the code after each new added functionality and had long discussions about it and the potential problems that may occur.</p>
-
-<h3>6.2. Component system hierarchy</h3>
-<p>The component system hierarchy of the application components is a complete sketch of all components in our application created in Figma design tool. This sketch is very important to us when testing, because it represents an insight into the order of the component testing. The below image represents our component system hierarchy from the bird eye view:</p>
+<h3>6.2. Hierarquia do sistema de componentes</h3> 
+<p>A hierarquia do sistema de componentes é um esboço completo de todos os componentes da aplicação, criado com a ferramenta Figma. Este esboço é muito útil durante os testes, pois nos dá uma visão clara da ordem em que os componentes devem ser testados. Abaixo está a hierarquia de componentes da nossa aplicação:<p>
 
 ![application component system](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/6d4a009f-746e-4627-a0fd-acf6fc0f15de)
 
-<h3>6.3. Unit testing</h3>
-<p>Unit testing for our application includes the process of testing individual functionalities or application components, to ensure each of them work properly independently. The goal of unit testing is to identify and correct errors in the early stages of development, increase the reliability of code and facilitating future application maintenance.</p>
+<h3>6.3. Testes unitários</h3>
+ <p>Os testes unitários focam no teste de funcionalidades individuais ou componentes da aplicação para garantir que cada um funcione corretamente de forma independente. O objetivo é identificar e corrigir erros nas fases iniciais de desenvolvimento, aumentando a confiabilidade do código e facilitando a manutenção futura da aplicação.</p>
 
 ![unit testing stats english](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/94ec4f61-698e-4954-ba35-1336e939864a)
 
