@@ -83,21 +83,10 @@
 ![error frequency](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/d90292b7-579d-4267-a88d-485ee70dc275)
 
 
-<h2>Eletrotécnica MAuricio – Principais características</h2>
+<h2>Eletrotécnica MAuricio   – Principais características</h2>
  <p>O Eletrotecncica Mauricio é um site de e-commerce desenvolvido em Next.js e Node.js. Nossa aplicação inclui um painel administrativo totalmente funcional e é completamente open-source. O site da loja virtual é totalmente responsivo e foi testado manualmente. Nosso modelo de loja e o tema de e-commerce em Next.js .</p> 
  <h3>O Next.js é bom para e-commerce?</h3>
   <p>O Next.js é, atualmente, uma das melhores ferramentas para desenvolver soluções personalizadas de e-commerce. Seus benefícios incluem desempenho superior, SEO otimizado, facilidade de desenvolvimento e implantação, excelente experiência para desenvolvedores e capacidade de lidar com projetos versáteis e escaláveis. Ao utilizar o Next.js, os desenvolvedores podem criar aplicações web atrativas que oferecem uma experiência excepcional aos usuários, enquanto mantêm o desempenho ideal.</p>
-
-<h2>Instructions</h2>
-<ol>
-  <li><p>To run the app you first need to download and install Node.js and npm on your computer. Here is a link to the tutorial that explains how to install them: <a href="https://www.youtube.com/watch?v=4FAtFwKVhn0" target="_blank">https://www.youtube.com/watch?v=4FAtFwKVhn0</a>. Also here is the link where you can download them: <a href="https://nodejs.org/en" target="_blank">https://nodejs.org/en</a></p></li>
-  <li><p>When you install Node.js and npm on your computer you need to download and install MySQL on your computer. Here is another link to the tutorial which explains how you can download and install MySQL on your computer: <a target="_blank" href="https://www.youtube.com/watch?v=BxdSUGBs0gM&t=212s">https://www.youtube.com/watch?v=BxdSUGBs0gM&t=212s</a>. Here is a link where you can download MySQL: <a href="https://dev.mysql.com/downloads/installer/" target="_blank">https://dev.mysql.com/downloads/installer/</a></p></li>
-  <li><p>This step is optional, but highly recommended if you don't have a database management app. Because HeidiSQL is beginner-friendly and very easy to use than other database management options. Here is a link to the tutorial which explains how to download and install HeidiSQL: <a href="https://www.youtube.com/watch?v=oJ24MyLeiPs" target="_blank">https://www.youtube.com/watch?v=oJ24MyLeiPs</a> and here is a link where you can download it: <a href="https://www.heidisql.com" target="_blank">https://www.heidisql.com</a></p></li>
-  <li><p>When you install all the programs you need on your computer you need to download the project. When you download the project, you need to extract it.</p></li>
-  <li><p>After you extract the project you need to open the project folder in your code editor and in the root create a file with the name .env.</p></li>
-  <li><p>You need to put the following code in the .env file and instead of username and password put your MySQL username and password:</p></li>
-</ol>
-
 
 <h2>Instruções</h2> 
 <ol> 
