@@ -7,6 +7,7 @@
 <h3>2.2. Kanban - Aplicativo de gerenciamento de projetos</h3> 
 <p>Utilizamos o aplicativo Kanban para o gerenciamento e acompanhamento do projeto. Trata-se de uma ferramenta gratuita que facilita a colaboração entre os membros da equipe e permite a exportação fácil de relatórios do projeto com apenas um clique.</p>
 ![plaky image](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/f670fe69-1037-4b8c-a522-047534398e0a)
+
 <h2>3. Análise de Requisitos</h2> 
 <h3>3.1. Especificação de requisitos de software</h3> 
 <p>Nesta etapa, definimos todos os requisitos funcionais e não funcionais do software relacionados a toda a aplicação. Também identificamos os requisitos que determinam as conexões do sistema com o ambiente e as exigências de desempenho que o sistema deve atender.</p> 
@@ -15,9 +16,9 @@
 
 ![use case diagram github](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/dc578826-4031-4b53-b54c-0c8af3e1710e)
 
-<p>The image above represents our <b>ecommerce website use case diagram</b>. Here we have also defined main success scenarios and alternative scenarios for admin and users.</p>
-<h2>4. System design</h2>
-<p>System design is the software engineering stage that transforms concepts and requirements into tangible software structures. It is the strategic process of defining the architecture, components, and interactions of a software system to fulfill specific functional and non-functional requirements. In this stage we wrote about the type of system architecture. We defined our front-end and back-end and we wrote about structure of front-end and back-end in our application. We defined our data structures, database structures and important types in our application.</p>
+<p>A imagem acima representa o nosso <b>diagrama de caso de uso do site de Eletrotecnica</b>. Nela, também definimos os principais cenários de sucesso e os cenários alternativos tanto para administradores quanto para usuários.</p> 
+<h2>4. Design do Sistema</h2> 
+<p>O design do sistema é a etapa da engenharia de software que transforma conceitos e requisitos em estruturas concretas de software. É um processo estratégico que define a arquitetura, os componentes e as interações de um sistema de software para atender a requisitos funcionais e não funcionais específicos. Nesta etapa, descrevemos o tipo de arquitetura do sistema. Definimos o front-end e o back-end, detalhando suas estruturas dentro da nossa aplicação. Também especificamos as estruturas de dados, a estrutura do banco de dados e os tipos mais importantes utilizados na aplicação.</p>
 
 <h2>5. Software implementation</h2>
 <p>Software implementation is the process of converting a software design into a functional software system. This is where all programming should begin.
