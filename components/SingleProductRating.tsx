@@ -30,7 +30,7 @@ const SingleProductRating = ({ rating }: { rating: number }) => {
             </>
           );
         })}
-      <span className="text-xl ml-1">(3 reviews)</span>
+      <span className="text-xl ml-1">(3 avaliações)</span>
     </div>
   );
 };

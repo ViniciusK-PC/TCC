@@ -25,16 +25,16 @@ const CartPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Cart Page" path="Home | Cart" />
+      <SectionTitle title="Carrinho de Compras" path="Home | Carrinho" />
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Shopping Cart
+          Carrinho de compras
           </h1>
           <form className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
             <section aria-labelledby="cart-heading" className="lg:col-span-7">
               <h2 id="cart-heading" className="sr-only">
-                Items in your shopping cart
+              Itens no seu carrinho de compras
               </h2>
 
               <ul
@@ -85,7 +85,7 @@ const CartPage = () => {
                               type="button"
                               className="-m-2 inline-flex p-2 text-gray-400 hover:text-gray-500"
                             >
-                              <span className="sr-only">Remove</span>
+                              <span className="sr-only">Remover</span>
                               <FaXmark className="h-5 w-5" aria-hidden="true" />
                             </button>
                           </div>
@@ -105,7 +105,7 @@ const CartPage = () => {
                           />
                         )}
 
-                        <span>{1 ? "In stock" : `Ships in 3 days`}</span>
+                        <span>{1 ? "Em Estoque" : `Ships in 3 days`}</span>
                       </p>
                     </div>
                   </li>
@@ -122,25 +122,25 @@ const CartPage = () => {
                 id="summary-heading"
                 className="text-lg font-medium text-gray-900"
               >
-                Order summary
+                Resumo do pedido
               </h2>
 
               <dl className="mt-6 space-y-4">
                 <div className="flex items-center justify-between">
                   <dt className="text-sm text-gray-600">Subtotal</dt>
                   <dd className="text-sm font-medium text-gray-900">
-                    ${total}
+                    R${total}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="flex items-center text-sm text-gray-600">
-                    <span>Shipping estimate</span>
+                    <span>Estimatimado de envio</span>
                     <a
                       href="#"
                       className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500"
                     >
                       <span className="sr-only">
-                        Learn more about how shipping is calculated
+                        Saiba mais sobre como o frete é calculado
                       </span>
                       <FaCircleQuestion
                         className="h-5 w-5"
@@ -148,17 +148,17 @@ const CartPage = () => {
                       />
                     </a>
                   </dt>
-                  <dd className="text-sm font-medium text-gray-900">$5.00</dd>
+                  <dd className="text-sm font-medium text-gray-900">R$5.00</dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="flex text-sm text-gray-600">
-                    <span>Tax estimate</span>
+                    <span>Taxa Estimada</span>
                     <a
                       href="#"
                       className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500"
                     >
                       <span className="sr-only">
-                        Learn more about how tax is calculated
+                      Saiba mais sobre como o imposto é calculado
                       </span>
                       <FaCircleQuestion
                         className="h-5 w-5"
@@ -167,15 +167,15 @@ const CartPage = () => {
                     </a>
                   </dt>
                   <dd className="text-sm font-medium text-gray-900">
-                    ${total / 5}
+                    R${total / 5}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="text-base font-medium text-gray-900">
-                    Order total
+                    Valor Total
                   </dt>
                   <dd className="text-base font-medium text-gray-900">
-                    ${total === 0 ? 0 : Math.round(total + total / 5 + 5)}
+                    R${total === 0 ? 0 : Math.round(total + total / 5 + 5)}
                   </dd>
                 </div>
               </dl>
@@ -185,7 +185,7 @@ const CartPage = () => {
                     href="/checkout"
                     className="block flex justify-center items-center w-full uppercase bg-white px-4 py-3 text-base border border-black border-gray-300 font-bold text-blue-600 shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
                   >
-                    <span>Checkout</span>
+                    <span>Comprar</span>
                   </Link>
                 </div>
               )}

@@ -20,7 +20,7 @@ model Product {
   mainImage      String
   price          Int                      @default(0)
   rating         Int                      @default(0)
-  description    String
+  description    String                   @db.VarChar(255)
   manufacturer   String
   inStock        Int                      @default(1)
   categoryId     String
@@ -28,6 +28,9 @@ model Product {
   customerOrders customer_order_product[]
   Wishlist       Wishlist[]
 }
+
+
+
 
 model Image {
   imageID   String @id @default(uuid())
