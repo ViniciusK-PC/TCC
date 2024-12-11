@@ -48,40 +48,37 @@
 <h3>6.3. Testes unitários</h3>
  <p>Os testes unitários focam no teste de funcionalidades individuais ou componentes da aplicação para garantir que cada um funcione corretamente de forma independente. O objetivo é identificar e corrigir erros nas fases iniciais de desenvolvimento, aumentando a confiabilidade do código e facilitando a manutenção futura da aplicação.</p>
 
-![unit testing stats english](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/94ec4f61-698e-4954-ba35-1336e939864a)
-
-<p>As the image above shows we found a total of 75 errors in unit test of 103 total errors found, which in our testing unit testing had the highest efficiency with 72.8%. During unit testing, we used the black box and the white box method. The techniques we used for testing were:</p>
-<p>The black box method:</p>
-<ol>
-  <li><p>Equivalence partitioning</p></li>
-  <li><p>Boundary Value Analysis – BVA</p></li>
-</ol>
-<p>The white box method:</p>
-<ol>
-  <li><p>Statement coverage</p></li>
-  <li><p>Decision coverage</p></li>
-  <li><p>Condition coverage</p></li>
+<p>Como mostrado na imagem acima, encontramos um total de 75 erros nos testes unitários, de um total de 103 erros encontrados. Isso fez com que os testes unitários tivessem a maior eficiência, com 72,8%. Durante os testes unitários, utilizamos os métodos de caixa preta e caixa branca. As técnicas aplicadas foram:</p> 
+<p>Método de caixa preta:</p> 
+<ol> 
+  <li><p>Partição de equivalência</p></li> 
+  <li><p>Análise de Valores-Limite (Boundary Value Analysis – BVA)</p></li> 
+</ol> 
+<p>Método de caixa branca:</p> 
+<ol> 
+  <li><p>Cobertura de declarações</p></li> 
+  <li><p>Cobertura de decisões</p></li> 
+  <li><p>Cobertura de condições</p></li> 
 </ol>
 
-<h3>6.4. Integration testing</h3>
-<p>In integration testing, we used the approach "Integration from the bottom to top". This is very used approach in integration testing. This method starts from the components of the system organized in the hierarchy on which the main program is located. Testing starts by unit testing all components located at the lowest level in hierarchy. The components are then tested at the next level that calls previously tested components.</p>
+<h3>6.4. Teste de integração</h3>
+ <p>No teste de integração, utilizamos a abordagem "Integração de baixo para cima". Essa é uma abordagem muito comum em testes de integração. O método começa pelos componentes do sistema organizados em uma hierarquia, onde o programa principal está localizado no nível mais alto. O processo de teste inicia com testes unitários de todos os componentes localizados no nível mais baixo da hierarquia. Em seguida, os componentes são testados no próximo nível, que chama os componentes já testados anteriormente.</p>
 
 ![integration testing stats eng](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/4375373b-b67d-4a11-bee4-ff55325c2db7)
 
-<p>As the image above shows we found a total of 28 errors in integration testing of 103 total errors found, which in our testing, integration testing has efficiency with 27.2%.</p>
+<p>Como mostrado na imagem acima, encontramos um total de 28 erros durante os testes de integração, de um total de 103 erros encontrados, o que resultou em uma eficiência de 27,2% para os testes de integração.</p> 
 
-<h3>6.5. End-to-end testing</h3>
-<p>End-to-end testing is the highest, final level of testing. It is checks whether the system, as a whole, acts in accordance with the specification of the requests set by the customer. Since most functional requirements have already been verified at lower levels of testing, now emphasis is on non-functional requirements, such as speed, reliability, efficiency…</p>
+<h3>6.5. Teste de ponta a ponta (End-to-end)</h3>
+ <p>O teste de ponta a ponta é o nível mais alto e final do processo de testes. Ele verifica se o sistema, como um todo, funciona de acordo com as especificações e requisitos definidos pelo cliente. Como a maioria dos requisitos funcionais já foi verificada nos níveis inferiores de teste, nesta etapa o foco está nos requisitos não funcionais, como velocidade, confiabilidade e eficiência.</p> 
 
-<h3>6.6. Error records at a specified time interval</h3>
-<p>During testing, we recorded the found mistakes by days. The next diagram helped us know how to know how our testing progresses.</p>
+ <h3>6.6. Registro de erros em intervalos de tempo específicos</h3> 
+ <p>Durante os testes, registramos os erros encontrados ao longo dos dias. O diagrama a seguir nos ajudou a acompanhar o progresso dos testes.</p>
 
 ![diagram about erros by days](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/1b99f3f8-d344-48a5-a973-6764b7e3f7bf)
 
-<p>As the image above shows, the number of errors increases day by day, so testing must continue. Throughout 4 days of testing, we managed to find a total of 103 errors.</p>
-
-<h3>6.7. Analysis of errors found</h3>
-<p>During testing, we also conducted the error report form that we have already mentioned in the introductory chapter on testing. This document has helped us significantly in order to document all the most common types of mistakes in our application, which shows the image below.</p>
+<p>Como mostrado na imagem acima, o número de erros aumenta dia após dia, indicando que os testes precisam continuar. Ao longo de 4 dias de testes, conseguimos identificar um total de 103 erros.</p> 
+<h3>6.7. Análise dos erros encontrados</h3> 
+<p>Durante os testes, também utilizamos um formulário de relatório de erros, já mencionado no capítulo introdutório sobre testes. Esse documento foi de grande ajuda para documentar os tipos mais comuns de erros na nossa aplicação, como mostrado na imagem abaixo.</p>
 
 ![error frequency](https://github.com/Kuzma02/Electronics-eCommerce-Shop-With-Admin-Dashboard-NextJS-NodeJS/assets/138793624/d90292b7-579d-4267-a88d-485ee70dc275)
 
