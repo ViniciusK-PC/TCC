@@ -88,9 +88,10 @@
 <p>Next.js is currently one of the best ways for developing custom eCommerce solutions. It’s benefits include improved performance, SEO-friendliness, easy development and deployment, excellent developer experience, and the ability to handle versatile and scalable projects. By leveraging Next.js, developers can create compelling web applications that deliver an exceptional user experience while maintaining optimal performance.</p>
 
 
-<h2>Step-by-step video instructions for running the app</h2>
-
-[https://www.youtube.com/watch?v=Ry0aOMws0gE](https://www.youtube.com/watch?v=Ry0aOMws0gE)
+<h2>Singitronic – Principais características</h2>
+ <p>O Eletrotecncica Mauricio é um site de e-commerce desenvolvido em Next.js e Node.js. Nossa aplicação inclui um painel administrativo totalmente funcional e é completamente open-source. O site da loja virtual é totalmente responsivo e foi testado manualmente. Nosso modelo de loja e o tema de e-commerce em Next.js .</p> 
+ <h3>O Next.js é bom para e-commerce?</h3>
+  <p>O Next.js é, atualmente, uma das melhores ferramentas para desenvolver soluções personalizadas de e-commerce. Seus benefícios incluem desempenho superior, SEO otimizado, facilidade de desenvolvimento e implantação, excelente experiência para desenvolvedores e capacidade de lidar com projetos versáteis e escaláveis. Ao utilizar o Next.js, os desenvolvedores podem criar aplicações web atrativas que oferecem uma experiência excepcional aos usuários, enquanto mantêm o desempenho ideal.</p>
 
 <h2>Instructions</h2>
 <ol>
